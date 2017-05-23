@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.orangecoastcollege.cs272.ic14.view.AddMember">
+   <children>
+      <Label layoutX="28.0" layoutY="41.0" prefHeight="17.0" prefWidth="71.0" text="First Name:" />
+      <Label layoutX="24.0" layoutY="71.0" text="Last Name:" />
+      <Label layoutX="28.0" layoutY="104.0" prefHeight="17.0" prefWidth="71.0" text="Birthday:" />
+      <Label layoutX="24.0" layoutY="136.0" prefHeight="17.0" prefWidth="99.0" text="Phone Number:" />
+      <Label layoutX="23.0" layoutY="166.0" text="Address" />
+      <Label layoutX="24.0" layoutY="200.0" prefHeight="17.0" prefWidth="50.0" text="City" />
+      <Label layoutX="21.0" layoutY="239.0" prefHeight="17.0" prefWidth="50.0" text="State" />
+      <Label layoutX="21.0" layoutY="277.0" text="Zip Code" />
+      <TextField fx:id="addFirstName" layoutX="141.0" layoutY="37.0" />
+      <TextField fx:id="addLastName" layoutX="141.0" layoutY="67.0" />
+      <TextField fx:id="addBirthday" layoutX="141.0" layoutY="100.0" />
+      <TextField fx:id="addPhone" layoutX="141.0" layoutY="132.0" />
+      <TextField fx:id="addAddress" layoutX="141.0" layoutY="162.0" prefHeight="25.0" prefWidth="419.0" />
+      <TextField fx:id="addCity" layoutX="141.0" layoutY="196.0" />
+      <TextField fx:id="addState" layoutX="141.0" layoutY="235.0" />
+      <TextField fx:id="addZipCode" layoutX="141.0" layoutY="273.0" />
+      <Button fx:id="save" layoutX="459.0" layoutY="338.0" mnemonicParsing="false" onAction="#saveClick" text="Save" />
+      <Label fx:id="errorLabel" layoutX="29.0" layoutY="14.0" prefHeight="17.0" prefWidth="393.0" text="*All fields must be complete" textFill="#ab280f" />
+      <Button fx:id="cancelButton" layoutX="524.0" layoutY="338.0" mnemonicParsing="false" onAction="#cancelClick" text="Cancel" />
+      <Button fx:id="back" layoutX="43.0" layoutY="338.0" mnemonicParsing="false" onAction="#backClick" text="Back" />
+   </children>
+</Pane>
